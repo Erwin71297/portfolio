@@ -805,7 +805,7 @@ export default function Home() {
                     <h6 className="font-semibold leading-5">Email</h6>
                   </div>
                   <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">
-                    Let's get in touch.
+                    Let&apos;s get in touch.
                   </p>
                 </div>
               </div>
@@ -820,7 +820,7 @@ export default function Home() {
                     <h6 className="font-semibold leading-5">LinkedIn</h6>
                   </div>
                   <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">
-                    Let's connect.
+                    Let&apos;s connect.
                   </p>
                 </div>
               </div>
