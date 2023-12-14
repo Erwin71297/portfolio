@@ -210,41 +210,41 @@ export default function Home() {
       <html id="home" className={styles.html}>
         <body>
           {/* Nav Bar */}
-          <div className="w-full h-20 bg-yellow-400 sticky top-0 right-0 left-0 z-10">
-        <div className="container mx-auto px-4 h-full">
-          <div className="flex justify-between items-center h-full">
-            <a href="#home" className={styles.homebutton}>
-              Home
-            </a>
-            <ul className="hidden md:flex gap-x-6 text-black align-right">
-              <li>
-                <Link href="#about">
-                  <p className={styles.text}>About</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="#skillset">
-                  <p className={styles.text}>Skillset</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="#project">
-                  <p className={styles.text}>Projects</p>
-                </Link>
-              </li>
-              <li>
-                <Link href="#contact">
-                  <p className={styles.text}>Contacts</p>
-                </Link>
-              </li>
-            </ul>
+          <div className="w-full h-20 bg-yellow-400 top-0 right-0 left-0 z-10">
+            <div className="container mx-auto px-4 h-full">
+              <div className="flex justify-between items-center h-full">
+                <a href="#home" className={styles.homebutton}>
+                  Home
+                </a>
+                <ul className="hidden md:flex gap-x-6 text-black align-right">
+                  <li>
+                    <Link href="#about">
+                      <p className={styles.text}>About</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#skillset">
+                      <p className={styles.text}>Skillset</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#project">
+                      <p className={styles.text}>Projects</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#contact">
+                      <p className={styles.text}>Contacts</p>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
           {/* Start of intro */}
           <div id="intro" className="w-9/12 mt-20 ml-auto mr-auto">
-            <div className="grid grid-cols-4 px-5 w-9/12 ml-auto mr-auto pb-12">
-              <div className="lg:col-span-1 mt-auto mb-auto">
+            <div className="flex flex-col items-center justify-between w-full lg:flex-row px-5 w-9/12 ml-auto mr-auto pb-12">
+              <div className="w-5/12 mt-auto mb-auto">
                 <Image
                   className={styles.img}
                   src="/assets/image_erwin.jpeg"
@@ -253,8 +253,8 @@ export default function Home() {
                   height={400}
                 />
               </div>
-              <div className="text-white mt-auto mb-auto px-10 text-justify lg:col-span-3">
-                <h2 className="text-yellow-400 font-semibold py-5 text-6xl">
+              <div className="text-white mt-auto mb-auto px-10 text-justify">
+                <h2 className="text-yellow-400 font-semibold py-5 text-4xl">
                   Software Engineer
                 </h2>
                 <p className="mt-1">
@@ -343,15 +343,10 @@ export default function Home() {
                   "text-center grid lg:grid-cols-2"
                 )}
               >
-                <div className="text-left text-white">
-                  <p>Name :</p>
-                  <p>Current City :</p>
-                  <p>Age :</p>
-                </div>
-                <div className="text-right text-gray-400">
-                  <p>Erwin Susanto</p>
-                  <p>Jakarta</p>
-                  <p>26</p>
+                <div className="text-left text-white w-max">
+                  <p>Name : Erwin Susanto</p>
+                  <p>Current City: Jakarta</p>
+                  <p>Age : 26</p>
                 </div>
               </div>
               <div
@@ -840,7 +835,7 @@ export default function Home() {
             </a>
             <a href="https://www.linkedin.com/in/erwin-susanto-431670209">
               <div className="relative  p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
-               <div className="relative p-5 bg-white rounded-sm">
+                <div className="relative p-5 bg-white rounded-sm">
                   <div className="flex flex-col items-center  mb-2 lg:flex-row">
                     <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
                       <Linkedin></Linkedin>
@@ -855,7 +850,7 @@ export default function Home() {
             </a>
             <a href="https://github.com/Erwin71297">
               <div className="relative  p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
-               <div className="relative p-5 bg-white rounded-sm">
+                <div className="relative p-5 bg-white rounded-sm">
                   <div className="flex flex-col items-center  mb-2 lg:flex-row">
                     <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
                       <GitHub></GitHub>
