@@ -231,7 +231,13 @@ export default function Home() {
                 </h2>
                 <p className="mt-1">
                   Hi I&apos;m Erwin Susanto. A software engineer who is based in
-                  Indonesia with aspirations of working abroad.
+                  Indonesia with aspirations of working abroad in Japan.
+                </p>
+                <p className="mt-5">
+                  I usually dabble in music and gaming off work. Usually I
+                  listen to Pop like J-Pop, C-Pop, and K-pop, but I like other
+                  genres like House and Jazz as well. Generally I like doing
+                  sports once in a while as well.
                 </p>
                 <div className="flex place-content-end mt-10">
                   <a href="https://www.facebook.com/erwin.susanto.522">
