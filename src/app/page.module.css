@@ -48,3 +48,28 @@
     border-radius: 20px;
     margin: auto;
 }
+
+.homebutton {
+  color: white;
+  background-color: black;
+  text-align: center;
+  border: solid white 2px;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  margin: 2px;
+}
+
+.homebutton:hover {
+  background-color: #36454F;
+  color: white;
+  border: solid gold;
+}
+
+.text{
+  z-index: 1;
+}
+
+.text:hover{
+  color: #36454F;
+  font-size: larger;
+}

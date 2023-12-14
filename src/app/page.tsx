@@ -15,8 +15,6 @@ import {
   Bar,
 } from "recharts";
 import { Check, GitHub, Linkedin, Mail, Tool } from "react-feather";
-import { motion } from "framer-motion";
-import Navigation from "./component/navigation";
 
 export default function Home() {
   //Constants
@@ -212,7 +210,37 @@ export default function Home() {
       <html id="home" className={styles.html}>
         <body>
           {/* Nav Bar */}
-          <Navigation />
+          <div className="w-full h-20 bg-yellow-400 sticky top-0 right-0 left-0 z-10">
+        <div className="container mx-auto px-4 h-full">
+          <div className="flex justify-between items-center h-full">
+            <a href="#home" className={styles.homebutton}>
+              Home
+            </a>
+            <ul className="hidden md:flex gap-x-6 text-black align-right">
+              <li>
+                <Link href="#about">
+                  <p className={styles.text}>About</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="#skillset">
+                  <p className={styles.text}>Skillset</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/directories/hobbies">
+                  <p className={styles.text}>Hobbies</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/directories/contact">
+                  <p className={styles.text}>Contacts</p>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
           {/* Start of intro */}
           <div id="intro" className="w-9/12 mt-20 ml-auto mr-auto">
             <div className="grid grid-cols-4 px-5 w-9/12 ml-auto mr-auto pb-12">
