@@ -1,0 +1,50 @@
+.body {
+  color: white;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+}
+
+.html {
+  background-color: black;
+}
+
+.line {
+  background-color: black;
+  height: 3px;
+}
+
+.graph {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.stylebg {
+  height: auto;
+  min-height: 150px;
+  max-height: 280px;
+  width: 100%;
+  padding-right: 50px;
+  margin-left: 15px;
+  opacity: 60%;
+  position: absolute;
+  overflow: auto;
+}
+
+.img {
+    height:auto;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+}
