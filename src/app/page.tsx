@@ -230,7 +230,7 @@ export default function Home() {
                   Software Engineer
                 </h2>
                 <p className="mt-1">
-                  Hi I'm Erwin Susanto. A software engineer who is based in
+                  Hi I&apos;m Erwin Susanto. A software engineer who is based in
                   Indonesia with aspirations of working abroad.
                 </p>
                 <div className="flex place-content-end mt-10">
