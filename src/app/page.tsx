@@ -228,12 +228,12 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/directories/hobbies">
-                  <p className={styles.text}>Hobbies</p>
+                <Link href="#project">
+                  <p className={styles.text}>Projects</p>
                 </Link>
               </li>
               <li>
-                <Link href="/directories/contact">
+                <Link href="#contact">
                   <p className={styles.text}>Contacts</p>
                 </Link>
               </li>
@@ -809,7 +809,7 @@ export default function Home() {
           {/* End of Skillset */}
 
           {/* Start of Projects */}
-          {/* <div id="skillset" className="w-9/12 px-2 mt-2 mr-auto ml-auto">
+          {/* <div id="project" className="w-9/12 px-2 mt-2 mr-auto ml-auto">
             <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 ml-5 mb-3 text-3xl">
               Projects
             </h3>
@@ -817,7 +817,7 @@ export default function Home() {
           {/* End of Projects */}
 
           {/* Start of Contacts */}
-          <div id="skillset" className="w-9/12 mt-20 mr-auto ml-auto">
+          <div id="contact" className="w-9/12 mt-20 mr-auto ml-auto">
             <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 mb-3 text-3xl">
               Contacts
             </h3>
