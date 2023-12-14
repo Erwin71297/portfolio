@@ -211,8 +211,6 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between p-24">
       <html className={styles.html}>
         <body>
-          {/* Nav Bar */}
-          <Navigation />
           {/* Start of intro */}
           <div id="intro" className="w-9/12 mt-20 ml-auto mr-auto">
             <div className="grid grid-cols-4 px-5 w-9/12 ml-auto mr-auto pb-12">
