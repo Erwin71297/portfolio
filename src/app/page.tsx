@@ -804,11 +804,70 @@ export default function Home() {
           {/* End of Skillset */}
 
           {/* Start of Projects */}
-          {/* <div id="project" className="w-9/12 px-2 mt-2 mr-auto ml-auto">
-            <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 ml-5 mb-3 text-3xl">
+          <div id="project" className="w-9/12 mt-20 mr-auto ml-auto">
+            <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 mb-3 text-3xl">
               Projects
             </h3>
-          </div> */}
+          </div>
+          <div className="grid gap-8 row-gap-5 lg:grid-cols-3 w-9/12 px-2 mt-10 mr-auto ml-auto">
+            <a href="https://eraspace.com">
+              <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
+                <div className="flex flex-col items-center  mb-2 lg:flex-row">
+                  <Image
+                    className="relative"
+                    src="/assets/eraspace.png"
+                    alt="instagram"
+                    width={450}
+                    height={250}
+                  ></Image>
+                </div>
+                <div className="p-3">
+                <h6 className="font-semibold leading-5 font-semibold text-white">Eraspace</h6>
+                <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    I worked as part of the promotion and stock service team to make and maintain the promotion and stock aspect of this product.
+                </p>
+                </div>
+              </div>
+            </a>
+            <a href="https://ibox.co.id">
+              <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
+                <div className="flex flex-col items-center  mb-2 lg:flex-row">
+                  <Image
+                    className="relative"
+                    src="/assets/ibox.png"
+                    alt="instagram"
+                    width={450}
+                    height={250}
+                  ></Image>
+                </div>
+                <div className="p-3">
+                <h6 className="font-semibold leading-5 font-semibold text-white">IBox</h6>
+                <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    I worked as part of the promotion and stock service team to make and maintain the promotion and stock aspect of this product.
+                </p>
+                </div>
+              </div>
+            </a>
+            <a href="https://jdsports.id/">
+              <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
+                <div className="flex flex-col items-center  mb-2 lg:flex-row">
+                  <Image
+                    className="relative"
+                    src="/assets/jdsport.png"
+                    alt="instagram"
+                    width={450}
+                    height={250}
+                  ></Image>
+                </div>
+                <div className="p-3">
+                <h6 className="font-semibold leading-5 font-semibold text-white">JDSport</h6>
+                <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    I worked as part of the promotion and stock service team to make and maintain the promotion and stock aspect of this product.
+                </p>
+                </div>
+              </div>
+            </a>
+          </div>
           {/* End of Projects */}
 
           {/* Start of Contacts */}
@@ -817,7 +876,7 @@ export default function Home() {
               Contacts
             </h3>
           </div>
-          <div className="grid gap-8 row-gap-5 lg:grid-cols-3 w-9/12 px-2 mt-20 mr-auto ml-auto">
+          <div className="grid gap-8 row-gap-5 lg:grid-cols-3 w-9/12 px-2 mt-10 mr-auto ml-auto">
             <a href="mailto:erwins71297@gmail.com">
               <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
                 <div className="relative p-5 bg-white rounded-sm">
