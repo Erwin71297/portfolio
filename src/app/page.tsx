@@ -14,7 +14,7 @@ import {
   Legend,
   Bar,
 } from "recharts";
-import { Check, Tool } from "react-feather";
+import { Check, GitHub, Linkedin, Mail, Tool } from "react-feather";
 import { motion } from "framer-motion";
 import Navigation from "./component/navigation";
 
@@ -209,7 +209,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between p-24">
-      <html className={styles.html}>
+      <html id="home" className={styles.html}>
         <body>
           {/* Nav Bar */}
           <Navigation />
@@ -292,6 +292,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* End of intro */}
 
           {/* Start of about */}
           <div
@@ -595,13 +596,13 @@ export default function Home() {
           {/* End of About */}
 
           {/* Start of Skillset */}
-          <div id="skillset" className="w-9/12 px-2 mt-2 mr-auto ml-auto">
-            <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 ml-5 mb-3 text-3xl">
+          <div id="skillset" className="w-9/12 mt-2 mr-auto ml-auto">
+            <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 mb-3 text-3xl">
               Skillset
             </h3>
           </div>
 
-          <div className="grid gap-8 row-gap-8 lg:grid-cols-3 text-center w-9/12 mr-auto ml-auto mt-10">
+          <div className="grid gap-8 row-gap-8 lg:grid-cols-3 text-center w-9/12 mr-auto ml-auto mt-20">
             <div className="lg:col-span-1">
               <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 mx-auto sm:w-24 sm:h-24">
                 <Image
@@ -777,8 +778,70 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           {/* End of Skillset */}
+
+          {/* Start of Projects */}
+          {/* <div id="skillset" className="w-9/12 px-2 mt-2 mr-auto ml-auto">
+            <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 ml-5 mb-3 text-3xl">
+              Projects
+            </h3>
+          </div> */}
+          {/* End of Projects */}
+
+          {/* Start of Contacts */}
+          <div id="skillset" className="w-9/12 mt-20 mr-auto ml-auto">
+            <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 mb-3 text-3xl">
+              Contacts
+            </h3>
+          </div>
+          <div className="grid gap-8 row-gap-5 lg:grid-cols-3 w-9/12 px-2 mt-20 mr-auto ml-auto">
+            <a href="mailto:erwins71297@gmail.com">
+              <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
+                <div className="relative p-5 bg-white rounded-sm">
+                  <div className="flex flex-col items-center  mb-2 lg:flex-row">
+                    <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+                      <Mail></Mail>
+                    </div>
+                    <h6 className="font-semibold leading-5">Email</h6>
+                  </div>
+                  <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">
+                    Let's get in touch.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/erwin-susanto-431670209">
+              <div className="relative  p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
+               <div className="relative p-5 bg-white rounded-sm">
+                  <div className="flex flex-col items-center  mb-2 lg:flex-row">
+                    <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+                      <Linkedin></Linkedin>
+                    </div>
+                    <h6 className="font-semibold leading-5">LinkedIn</h6>
+                  </div>
+                  <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">
+                    Let's connect.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/Erwin71297">
+              <div className="relative  p-px overflow-hidden transition duration-300 transform border rounded shadow-md hover:scale-105 group hover:shadow-xl">
+               <div className="relative p-5 bg-white rounded-sm">
+                  <div className="flex flex-col items-center  mb-2 lg:flex-row">
+                    <div className="flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+                      <GitHub></GitHub>
+                    </div>
+                    <h6 className="font-semibold leading-5">Github</h6>
+                  </div>
+                  <p className="mb-2 text-sm text-gray-900 text-center lg:text-start">
+                    Here are my repos.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          {/* End of Contacts */}
         </body>
       </html>
     </main>
