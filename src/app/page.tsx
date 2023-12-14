@@ -236,8 +236,8 @@ export default function Home() {
                 <p className="mt-5">
                   I usually dabble in music and gaming off work. Usually I
                   listen to Pop like J-Pop, C-Pop, and K-pop, but I like other
-                  genres like House and Jazz as well. Generally I like doing
-                  sports once in a while as well.
+                  genres like House and Jazz as well. I also do sports like
+                  badminton, going to the gym and running on occasions.
                 </p>
                 <div className="flex place-content-end mt-10">
                   <a href="https://www.facebook.com/erwin.susanto.522">
