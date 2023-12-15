@@ -47,61 +47,14 @@ export default function Home() {
     },
   ];
 
-  const skills = [
-    {
-      skill: "FE",
-      fill: "#ffc658",
-      proficiency: "70",
-    },
-    {
-      skill: "BE",
-      fill: "#ffc658",
-      proficiency: "70",
-    },
-  ];
-
   //About Dataset
   let education = {
     Education: [
       {
-        id: 1,
-        title: "Malacca International School (Elementary Grade)",
-        date: "2003-2009",
-      },
-      {
-        id: 2,
-        title: "Darma Yudha Junior High School",
-        date: "2009-2012",
-      },
-      {
-        id: 3,
-        title: "Darma Yudha Senior High School",
-        date: "2012-2015",
-      },
-      {
         id: 3,
         title: "Bina Nusanatara University",
         date: "2015-2019",
-        GPA: "3.4",
-      },
-    ],
-  };
-
-  let origanisation = {
-    "Organisational Experience": [
-      {
-        id: 1,
-        title: "BNEC",
-        date: "2015-2017",
-        position: "Branding Team",
-        tasks: "",
-      },
-      {
-        id: 2,
-        title: "BSSC",
-        date: "2015-2017",
-        position: "Branding Team",
-        tasks: "",
+        GPA: "3.4 GPA",
       },
     ],
   };
@@ -110,24 +63,72 @@ export default function Home() {
     "Working Experience": [
       {
         id: 1,
-        title: "BPR Intidana",
+        title: "PT Erajaya Swasembada Tbk",
         date: "2018-2019",
         position: "Intern Software Developer",
-        comments: "",
+        comment1:
+          "•	Developed javascript based mobile training application for senior employees to track their self-training program given by the company.",
+        comment2:
+          "•	Implemented new features on HR website to allow supervisors to track the of progress of new ",
+        comment3: "",
+        comment4: "",
+        comment5: "",
+        comment6: "",
+        comment7: "",
+        comment8: "",
+        comment9: "",
+        comment10: "",
+        comment11: "",
+        comment12: "",
       },
       {
         id: 1,
         title: "BPR Intidana",
         date: "2020-2021",
         position: "IT Specialist",
-        comments: "",
+        comment1: "•	Maintained the PHP Laravel website that was outsourced.",
+        comment2:
+          "•	Designed and implemented extra feature that allowed the front desk attendant to verify data of customer to the SQL database.",
+        comment3: "",
+        comment4: "",
+        comment5: "",
+        comment6: "",
+        comment7: "",
+        comment8: "",
+        comment9: "",
+        comment10: "",
+        comment11: "",
+        comment12: "",
       },
       {
         id: 2,
         title: "PT Erajaya Swasembada Tbk.",
         date: "2021-2023",
         position: "Software Engineer",
-        comments: "",
+        comment1:
+          "•	Participated in the agile software development cycle to migrate from monolithic (Magento) to microservices for Promotion and Stock services using Gin Framework using REST API, Docker, Kubernetes, MySQL and PostgreSQL database to increase scalability as well as ease deployments for future features to be implemented.",
+        comment2:
+          "•	Implemented the use of scalyr on code to help better track error logs, as well as logging data that runs on go-routines and workers. Implement sonarqube to help keep track of code-quality. Coordinated with DevOps using Open Telemetry and New Relic for observations of metrics so that loads stay relatively low and bug-free.",
+        comment3:
+          "•	Implemented automated email-service feature that used workers and go-routines to send emails to customers in case of promotions and restocks. This service also utilized the message brokering system using pubsub from GCP to minimize load and maximize efficiency.",
+        comment4:
+          "•	Designed and implemented gift card feature utilizing that allows users to redeem and use gift cards for their orders with partnering companies in collaboration with the order and customer microservice teams.",
+        comment5:
+          "•	Implemented redis onto functions with redundancy of data being passed from one microservice to another.",
+        comment6:
+          "•	Implemented Swagger in microservice for ease of testing, aiding QA, and managing documentation.",
+        comment7:
+          "•	Managed response times of APIs to be under 1 second or less.",
+        comment8:
+          "•	Assisted in the implementation of the credit/deposit payment feature in B2B commerce service.",
+        comment9:
+          "•	Assisted in the implementation of the promotion side of order management system.",
+        comment10:
+          "•	Managed the ERP microservice and well as revamping it to match clean code standards.",
+        comment11:
+          "•	Exchanged and designed ideas with senior about the implementation of revamping o2o scheduler.",
+        comment12:
+          "•	Implemented cron job scheduler to automate stock syncs in order to reduce risk of errors.",
       },
     ],
   };
@@ -479,26 +480,6 @@ export default function Home() {
                     JP
                   </div>
                 </div>
-                <hr className="mt-10"></hr>
-                <div className="mt-5">
-                  <p className="text-yellow-500 font-semibold mb-5">Skills</p>
-                  <BarChart
-                    width={200}
-                    height={200}
-                    data={skills}
-                    margin={{
-                      top: 5,
-                      right: 0,
-                      left: -10,
-                      bottom: 5,
-                    }}
-                  >
-                    <XAxis dataKey="skill" />
-                    <YAxis />
-                    <Legend />
-                    <Bar dataKey="proficiency" barSize={25} fill="#ffc658" />
-                  </BarChart>
-                </div>
                 <hr className="mt-10 mb-5"></hr>
                 <div className="text-yellow-400 text-left">
                   <div className="flex">
@@ -534,37 +515,7 @@ export default function Home() {
             <div className="lg:col-span-7 overflow-hidden relative ml-5 mr-10 mt-5 py-5">
               <h2 className="text-white py-5 px-5">Education</h2>
               {Object.values(education).map((posts, idx) => (
-                <div
-                  key={idx}
-                  className={"bg-white p-3 text-yellow-500 ml-5 mr-10"}
-                >
-                  <ul>
-                    {posts.map((post) => (
-                      <li
-                        key={post.id}
-                        className="relative p-3 bg-gradient-to-r from-gray-900 from:10% to-gray-500"
-                      >
-                        <h3 className="text-sm font-medium leading-5">
-                          {post.title}
-                        </h3>
-                        <hr className={styles.line}></hr>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
-                          <li>{post.date}</li>
-                        </ul>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-
-              <h2 className="text-white py-5 px-5 mt-10">
-                Organisational Experiences
-              </h2>
-              {Object.values(origanisation).map((posts, idx) => (
-                <div
-                  key={idx}
-                  className={"bg-white p-3 text-yellow-500 ml-5 mr-10"}
-                >
+                <div key={idx} className={"text-yellow-500 ml-5 mr-10"}>
                   <ul>
                     {posts.map((post) => (
                       <li
@@ -579,7 +530,7 @@ export default function Home() {
                           <li>{post.date}</li>
                         </ul>
                         <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
-                          <li>{post.position}</li>
+                          <li>{post.GPA}</li>
                         </ul>
                       </li>
                     ))}
@@ -589,10 +540,7 @@ export default function Home() {
 
               <h2 className="text-white py-5 px-5 mt-10">Work Experiences</h2>
               {Object.values(work).map((posts, idx) => (
-                <div
-                  key={idx}
-                  className={"bg-white p-3 text-yellow-500 ml-5 mr-10 mb-20"}
-                >
+                <div key={idx} className={"text-yellow-500 ml-5 mr-10 mb-20"}>
                   <ul>
                     {posts.map((post) => (
                       <li
@@ -608,6 +556,42 @@ export default function Home() {
                         </ul>
                         <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
                           <li>{post.position}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment1}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment2}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment3}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment4}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment5}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment6}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment7}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment8}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment9}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment10}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment11}</li>
+                        </ul>
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                          <li>{post.comment12}</li>
                         </ul>
                       </li>
                     ))}
@@ -621,7 +605,7 @@ export default function Home() {
           {/* Start of Skillset */}
           <div id="skillset" className="w-9/12 mt-2 mr-auto ml-auto">
             <h3 className="bg-gray-700 p-3 space-x-1 text-yellow-500 mb-3 text-3xl">
-              Skillset
+              Tech Stacks
             </h3>
           </div>
 
@@ -822,10 +806,16 @@ export default function Home() {
                   ></Image>
                 </div>
                 <div className="p-3">
-                <h6 className="font-semibold leading-5 font-semibold text-white">Eraspace</h6>
-                <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
-                    I worked as part of the promotion and stock service team to make and maintain the promotion and stock aspect of this product.
-                </p>
+                  <h6 className="font-semibold leading-5 font-semibold text-white">
+                    Eraspace
+                  </h6>
+                  <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    An ecommerce that mainly focuses on selling gadgets of all
+                    types and brands.
+                  </p>
+                  <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    I worked as part of the promotion and stock service team.
+                  </p>
                 </div>
               </div>
             </a>
@@ -841,10 +831,15 @@ export default function Home() {
                   ></Image>
                 </div>
                 <div className="p-3">
-                <h6 className="font-semibold leading-5 font-semibold text-white">IBox</h6>
-                <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
-                    I worked as part of the promotion and stock service team to make and maintain the promotion and stock aspect of this product.
-                </p>
+                  <h6 className="font-semibold leading-5 font-semibold text-white">
+                    IBox
+                  </h6>
+                  <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    An ecommerce that mainly focuses on apple products.
+                  </p>
+                  <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    I worked as part of the promotion and stock service team.
+                  </p>
                 </div>
               </div>
             </a>
@@ -860,10 +855,16 @@ export default function Home() {
                   ></Image>
                 </div>
                 <div className="p-3">
-                <h6 className="font-semibold leading-5 font-semibold text-white">JDSport</h6>
-                <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
-                    I worked as part of the promotion and stock service team to make and maintain the promotion and stock aspect of this product.
-                </p>
+                  <h6 className="font-semibold leading-5 font-semibold text-white">
+                    JDSport
+                  </h6>
+                  <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    An ecommerce that mainly focuses on fashion sports
+                    apparatus.
+                  </p>
+                  <p className="mb-2 mt-2 text-sm text-gray-900 text-center text-white lg:text-start">
+                    I worked as part of the promotion and stock service team.
+                  </p>
                 </div>
               </div>
             </a>
