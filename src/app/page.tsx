@@ -8,11 +8,6 @@ import {
   RadialBarChart,
   RadialBar,
   PolarAngleAxis,
-  BarChart,
-  XAxis,
-  YAxis,
-  Legend,
-  Bar,
 } from "recharts";
 import { Check, GitHub, Linkedin, Mail, Tool } from "react-feather";
 
