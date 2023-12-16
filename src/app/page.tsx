@@ -344,10 +344,19 @@ export default function Home() {
                   "text-center grid lg:grid-cols-2"
                 )}
               >
-                <div className="text-left text-white w-max">
-                  <p>Name : Erwin Susanto</p>
-                  <p>Current City: Jakarta</p>
-                  <p>Age : 26</p>
+                <div className="text-left w-max">
+                  <p>
+                    <a className="text-white">Name :</a>{" "}
+                    <a className="text-yellow-400">Erwin Susanto</a>
+                  </p>
+                  <p>
+                    <a className="text-white">City :</a>{" "}
+                    <a className="text-yellow-400">Jakarta</a>Current
+                  </p>
+                  <p>
+                    <a className="text-white">CurrentAge :</a>{" "}
+                    <a className="text-yellow-400">26</a>
+                  </p>
                 </div>
               </div>
               <div
@@ -518,18 +527,15 @@ export default function Home() {
                 <div key={idx} className={"text-yellow-500 ml-5 mr-10"}>
                   <ul>
                     {posts.map((post) => (
-                      <li
-                        key={post.id}
-                        className="relative p-3 bg-gradient-to-r from-gray-900 from:10% to-gray-500"
-                      >
+                      <li key={post.id} className="relative p-3 bg-gray-800">
                         <h3 className="text-sm font-medium leading-5">
                           {post.title}
                         </h3>
                         <hr className={styles.line}></hr>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.date}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.GPA}</li>
                         </ul>
                       </li>
@@ -543,54 +549,51 @@ export default function Home() {
                 <div key={idx} className={"text-yellow-500 ml-5 mr-10 mb-20"}>
                   <ul>
                     {posts.map((post) => (
-                      <li
-                        key={post.id}
-                        className="relative p-3 bg-gradient-to-r from-gray-900 from:10% to-gray-500"
-                      >
+                      <li key={post.id} className="relative p-3 bg-gray-800">
                         <h3 className="text-sm font-medium leading-5">
                           {post.title}
                         </h3>
                         <hr className={styles.line}></hr>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.date}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.position}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment1}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment2}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment3}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment4}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment5}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment6}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment7}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment8}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment9}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment10}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment11}</li>
                         </ul>
-                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-400">
+                        <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-white">
                           <li>{post.comment12}</li>
                         </ul>
                       </li>
